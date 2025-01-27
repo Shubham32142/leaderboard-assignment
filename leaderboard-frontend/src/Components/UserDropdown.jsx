@@ -4,7 +4,7 @@ import axios from "axios";
 export function UserDropdown({ onSelect }) {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/").then((response) => {
+    axios.get("https://leaderboard-assignment.onrender.com/").then((response) => {
       setUsers(response.data);
     });
   }, []);
