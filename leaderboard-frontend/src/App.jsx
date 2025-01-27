@@ -12,7 +12,7 @@ function App() {
   const handleUserSelect = (userId) => setSelectedUser(userId);
 
   const fetchLeaderboard = () => {
-    axios.get("http://localhost:5000/leaderboard").then((response) => {
+    axios.get("https://leaderboard-assignment.onrender.com/leaderboard").then((response) => {
       setLeaderboard(response.data);
     });
   };
