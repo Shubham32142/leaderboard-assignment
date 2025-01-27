@@ -7,7 +7,7 @@ export function ClaimButton({ userId, onClaim }) {
       return;
     }
     axios
-      .post("http://localhost:5000/claim", { userId })
+      .post("https://leaderboard-assignment.onrender.com/claim", { userId })
       .then((response) => {
         alert(`Points claimed ${response.data.points}`);
         onClaim(); //refreshes the leaderboard
